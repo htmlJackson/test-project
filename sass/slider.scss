@@ -1,0 +1,29 @@
+.slider__elem {
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider__dots {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  button {
+    width: 14px;
+    height: 14px;
+    background: #d1d1d1;
+    font-size: 0;
+    margin-right: 10px;
+  }
+
+  li:last-child button {
+    margin-right: 0;
+  }
+
+  .slick-active button {
+    background: $blue;
+  }
+}

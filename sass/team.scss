@@ -4,7 +4,6 @@
 
 .team__title {
   margin-bottom: 200px;
-  font-size: 48px;
 }
 
 .team__list {
@@ -15,4 +14,17 @@
   justify-content: space-between;
 
   padding: 0 45px;
+
+  @media (max-width: 1199px) {
+    padding: 0 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 767px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,5 +1,8 @@
 $blue: #4da1d2;
 
+$tablet: 991px;
+$mob: 575px;
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -32,8 +35,9 @@ a {
 }
 
 .container {
-  width: 1800px;
+  width: 1830px;
   max-width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
 
   display: -webkit-flex;
@@ -65,6 +69,13 @@ a {
 .title {
   font-size: 48px;
   margin-top: 50px;
+  @media (max-width: $tablet) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
 }
 
 .fa-lg {

@@ -6,22 +6,38 @@
   &--bottombar {
     min-height: 85px;
   }
-}
 
-.header__logo {
+  @media (max-width: 1534px) {
+    padding-left: 15px;
+  }
 
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .header__icon {
   margin-right: 25px;
   color: #1282C3;
+  @media (max-width: $tablet) {
+    margin-right: 10px;
+  }
 }
 
 .header__info {
-  margin-left: 375px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  margin-left: auto;
+
+  @media (max-width: 1259px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .header__info-text {
@@ -32,17 +48,35 @@
   font-size: 21px;
   font-weight: 700;
 
+  &:first-child {
+    @media (max-width: 1259px) {
+      margin-bottom: 20px;
+    }
+  }
+
   &:first-child::after {
     content: '';
     width: 1px;
     height: 33px;
     margin: 0 36px;
     background: #dddddd;
+    @media (max-width: 1259px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    align-items: center;
   }
 }
 
 .header__textlg {
   font-size: 24px;
+
+  @media (max-width: $tablet) {
+    font-size: 21px;
+  }
 }
 
 .header__time {
@@ -55,11 +89,23 @@
 }
 
 .header__btn {
-  margin-left: auto;
+  margin-left: 100px;
   border: 3px solid $blue;
 
   &:hover {
     color: #fff;
+  }
+
+  @media (max-width: 1534px) {
+    margin-left: 3%;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -70,6 +116,16 @@
 
 .header__nav {
   margin-left: 20px;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $mob) {
+    width: 100%;
+  }
+
+
 }
 
 .header__list {
@@ -78,10 +134,19 @@
   display: flex;
 
   font-weight: 700;
+
+  @media (max-width: $mob) {
+    flex-direction: column;
+    margin: 0 -15px;
+  }
 }
 
 .header__socials {
   margin-left: auto;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .header__list-item {
@@ -93,6 +158,7 @@
     display: flex;
     padding: 0 35px;
     line-height: 85px;
+    white-space: nowrap;
     border-top: 4px solid transparent;
 
     &:hover {
@@ -103,5 +169,20 @@
     &:active {
       opacity: 0.9;
     }
+
   }
+
+  @media (max-width: 1404px) {
+    font-size: 16px;
+    a {
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: $mob) {
+    a {
+      justify-content: center;
+    }
+  }
+
 }
