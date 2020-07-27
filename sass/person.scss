@@ -1,0 +1,61 @@
+.person {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 385px;
+  min-height: 280px;
+  padding-top: 80px;
+
+  background: #f2f2f2;
+
+  &:hover img {
+    margin-top: -10px;
+    border: 6px solid $blue;
+  }
+}
+
+.person__avatar {
+  position: absolute;
+  top: -125px;
+
+  width: 200px;
+  height: 200px;
+
+  background: #fff;
+  border-radius: 50%;
+  border: 15px solid #fff;
+
+  img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+  }
+
+}
+
+.person__name {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.person__position {
+  margin-bottom: 20px;
+  
+  font-size: 21px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.person__phone {
+  font-size: 26px;
+  font-weight: 700;
+}

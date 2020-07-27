@@ -1,0 +1,18 @@
+.team {
+
+}
+
+.team__title {
+  margin-bottom: 200px;
+  font-size: 48px;
+}
+
+.team__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: 0 45px;
+}

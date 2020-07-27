@@ -1,0 +1,23 @@
+.socials {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__icon {
+  transition: all 0.3s;
+  &:hover {
+    color: $blue;
+  }
+
+  &--footer {
+    font-size: 26px;
+  }
+}
